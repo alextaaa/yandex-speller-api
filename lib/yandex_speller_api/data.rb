@@ -8,7 +8,7 @@ module YandexSpellerApi
 
 		def self.get word
 			content=JSON.load(open(URI.parse(URI.encode(DATA_URL+'?'+'text='+word))))
-			return content.empty? ? "OK!" : content[0]['s']
+			return content.empty? ? "All right!" : content[0]['s']
 		end
 	end
 end
