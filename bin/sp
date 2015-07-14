@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'yandex_speller_api'
+puts YandexSpellerApi.check ARGV[0]
